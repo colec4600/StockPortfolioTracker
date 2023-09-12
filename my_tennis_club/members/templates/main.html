@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}
+  My Tennis Club
+{% endblock %}
+
+
+{% block content %}
+  <h1>Stock Search</h1>
+    <form action="{% url 'search' %}" method="get">
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="q" placeholder="Search...">
+        <input type="submit" value="Search">
+    </form>
+    <a href="{% url 'see_stock' %}" class="btn btn-primary">See Stock Performances</a>
+  <a href="{% url 'add_stock' %}" class="btn btn-primary">Add Stocks</a>
+{% endblock %}

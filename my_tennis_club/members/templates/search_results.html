@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Hello World!</h1>
+<p>Welcome to my first Django project!</p>
+
+{% if current_price is not None %}
+  <h2>Search Results</h2>
+  <p>The current price of {{ company_symbol }} is: ${{ current_price }}</p>
+  {% endif %}
+
+</body>
+</html>
